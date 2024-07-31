@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+*::-webkit-scrollbar {
+  display: none;
+}
+* {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* text-decoration: none; */
+  list-style-type: none;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 4%;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #ddd;
+ 
+}
+/* ===Logo and Nav links flex style */
+.nav-logo-menu {
+  width: 759px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* =====Nav Links flex style==== */
+.navbar .menu {
+  display: flex;
+  gap: 65px;
+  font-size: 14.13px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: left;
+  color: #40196d;
+}
+/* nav links and dropdown arrow */
+.dropdown-div p{
+  display: flex;
+  align-items: center;
+}
+
+
+/* ========DROPDOWN STYLE============ */
+.nav-links .menu .dropdown {
+  display: none;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+  position: absolute;
+  top: 75%;
+}
+.dropdown-div:hover .dropdown {
+  display: flex;
+  cursor: pointer;
+}
+/* Dropdown icons */
+.dropdown li a{
+  display: flex;
+  gap: 10px;
+  
+}
+.dropdown-left li a div, .dropdown-right li a div{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  /* width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #ad8fcf; */
+
+}
+
+
+.right-dropdown p {
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: -5px;
+  padding-top: 7%;
+  color: grey;
+}
+.right-dropdown,
+.dropdown-left {
+  border-radius: 0 5px 5px 0;
+  padding: 14.6px 25.36px 15.4px 25.36px;
+  background-color: #efefef5a;
+  /* background-color: #f2f2f276; */
+}
+
+.dropdown-right li,
+.dropdown-left li {
+  padding: 14.6px 15.36px 12.4px 15.36px;
+}
+.dropdown-left {
+  background-color: transparent;
+}
+.dropdown-right li a,
+.dropdown-left li a {
+  color: #000;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* =====Nav Sign up buttons style */
+.navbar .buttons {
+  display: flex;
+  align-items: center;
+  padding-right: 2%;
+  gap: 30px;
+}
+.navbar .buttons a {
+  padding: 14.6px 31.36px 15.4px 31.36px;
+  border-radius: 10px;
+  color: white;
+  background-color: #40196d;
+  font-size: 15.25px;
+  font-weight: 700;
+  line-height: 16px;
+}
+.navbar .buttons a.sign-in {
+  background-color: transparent;
+  color: #40196d;
+}
+.navbar .flag-icon {
+  width: 35px;
+  height: 35px;
+  background-color: #93ed97;
+  border-radius: 50%;
+}

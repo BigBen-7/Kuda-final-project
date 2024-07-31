@@ -55,16 +55,31 @@
   color: #40196d;
 }
 /* nav links and dropdown arrow */
-.dropdown-div p {
+/* .dropdown-div p {
   display: flex;
   align-items: center;
-}
+} */
 
 /* ========DROPDOWN STYLE============ */
-.nav-links .menu .dropdown {
+.dropdown {
   display: none;
+  position: absolute;
+  top: 70%;
+  left: 32%;
   background-color: white;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 7px;
+}
+.dropdown a {
+  display: block;
+  padding: 0.2rem 1rem;
+  text-decoration: none;
+}
+.dropdown-div:hover .dropdown {
+  display: block;
+}
+/* .nav-links .menu .dropdown {
+  display: none;
   border-radius: 5px;
   position: absolute;
   top: 75%;
@@ -72,9 +87,9 @@
 .dropdown-div:hover .dropdown {
   display: flex;
   cursor: pointer;
-}
+} */
 /* Dropdown icons */
-.dropdown li a {
+/* .dropdown li a {
   text-decoration: none;
   display: flex;
   gap: 10px;
@@ -84,10 +99,6 @@
   display: flex;
   align-content: center;
   justify-content: center;
-  /* width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: #ad8fcf; */
 }
 
 .right-dropdown p {
@@ -102,10 +113,9 @@
   border-radius: 0 5px 5px 0;
   padding: 14.6px 25.36px 15.4px 25.36px;
   background-color: #efefef5a;
-  /* background-color: #f2f2f276; */
-}
+} */
 
-.dropdown-right li,
+/* .dropdown-right li,
 .dropdown-left li {
   padding: 14.6px 15.36px 12.4px 15.36px;
 }
@@ -117,7 +127,7 @@
   color: #000;
   font-weight: 400;
   font-size: 16px;
-}
+} */
 
 /* =====Nav Sign up buttons style */
 .navbar .buttons {
@@ -185,7 +195,6 @@
   margin: 2% 0;
 }
 
-
 .mobile-menu-content ul {
   list-style: none;
   padding: 0;
@@ -200,7 +209,7 @@
   line-height: 21px;
   color: #40196d;
 }
-.mobile-menu-content .dropdown-content ul li {
+.mobile-menu-content .dropdown ul li {
   border-bottom: none;
 }
 
@@ -213,7 +222,6 @@
   font-size: 12px;
 }
 
-
 .menu-icon,
 .close-icon {
   cursor: pointer;
@@ -221,6 +229,7 @@
 }
 
 @media screen and (max-width: 1023px) {
+  
   .navlarge {
     justify-content: space-between;
   }
@@ -237,9 +246,9 @@
   .mobile-menu {
     display: block;
   }
-  .dropdown-content {
+  .dropdown {
     position: relative;
-    /* left: 0; */
+    left: 0;
   }
   .navbar .buttons a.sign-in {
     background-color: #dfe3ff;

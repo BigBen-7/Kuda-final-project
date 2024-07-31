@@ -2,7 +2,12 @@
   body {
     display: block;
     width: 100%;
+    overflow-x: hidden;
   }
+/* img{
+    max-width: 100%;
+    height: auto;
+} */
   /* HERO MOBILE STYLE */
   .hero {
     width: 100%;
@@ -47,11 +52,11 @@
     margin-bottom: 12px;
   }
   .card-item {
-    width: 95%;
+    width: 90%;
     height: 70px;
     display: flex;
     align-items: center;
-    margin: 0 0 2px 25px;
+    margin: 0 0 2px 10px;
   }
   /* to fit the paragraph into the newly assigned height for mobile */
   .card-details {
@@ -80,8 +85,8 @@
   }
   .phone-app .debit-details,
   .manage-money .debit-details {
-    /* width: 100%; */
-    padding: 5% 1% 0 1%;
+    width: 100%;
+    padding: 5% 0% 0 1%;
     font-size: 1rem;
     line-height: 1.5;
   }
@@ -89,8 +94,6 @@
   .manage-money .link {
     font-size: 12.75px;
     margin-left: 80px;
-    /* line-height: 16px; */
-    /* text-align: center; */
   }
   /* ///////////// */
   .sponsors-container img {
@@ -101,7 +104,7 @@
     width: 120px;
     padding: 4% 5%;
   }
-  
+
   .take-our-word h2 {
     font-size: 32px;
     padding: 2%;
@@ -165,3 +168,4 @@
     padding-left: 2%;
   }
 }
+

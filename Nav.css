@@ -75,6 +75,7 @@
 }
 /* Dropdown icons */
 .dropdown li a {
+  text-decoration: none;
   display: flex;
   gap: 10px;
 }
@@ -126,6 +127,7 @@
   gap: 30px;
 }
 .navbar .buttons a {
+  text-decoration: none;
   padding: 14.6px 31.36px 15.4px 31.36px;
   border-radius: 10px;
   color: white;
@@ -160,8 +162,8 @@
   z-index: 3;
   padding: 20px;
   box-sizing: border-box;
-  transform: translateX(-100%);
-  transition: transform 0.3s ease-in-out;
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in;
 }
 
 .mobile-menu.open {
@@ -182,10 +184,8 @@
   gap: 10px;
   margin: 2% 0;
 }
-.button2 {
-  background-color: #dfe3ff;
-  color: #40196d;
-}
+
+
 .mobile-menu-content ul {
   list-style: none;
   padding: 0;
@@ -212,19 +212,7 @@
 .moblieLiFlex span i {
   font-size: 12px;
 }
-/* .mobile-sign a {
-  text-decoration: none;
-  text-align: center;
-  font-size: 18px;
-  border-color: #dfe3ff;
-  font-size: 13px;
-  height: 40px;
-  max-width: 135px;
-  width: 100%;
-  border-radius: 10px;
-  font-weight: 700;
-  padding: 10px;
-} */
+
 
 .menu-icon,
 .close-icon {
@@ -252,5 +240,9 @@
   .dropdown-content {
     position: relative;
     /* left: 0; */
+  }
+  .navbar .buttons a.sign-in {
+    background-color: #dfe3ff;
+    color: #40196d;
   }
 }

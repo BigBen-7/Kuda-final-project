@@ -27,7 +27,7 @@
       rel="stylesheet"
       href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
     />
-    <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="Nav.css" />
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="mobilequery.css" />
@@ -356,107 +356,124 @@
       <!-- MOBILE MENU  -->
       <div class="mobile-menu">
         <div class="mobile-menu-header">
-            <div class="logo">
-                <a href="/"><img src="./img/Link.png" alt=""></a>
-            </div>
-            <div class="close-icon" onclick="toggleMenu()">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18 6L6 18" stroke="#40196D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M6 6L18 18" stroke="#40196D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
+          <div class="logo">
+            <a href="/"><img src="./images/logo.png" alt="Mobile logo" /></a>
+          </div>
+          <div class="close-icon" onclick="toggleMenu()">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 6L6 18"
+                stroke="#40196D"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M6 6L18 18"
+                stroke="#40196D"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
         </div>
         <div class="mobile-menu-content">
-            <div class="mobile-sign">
-                <button>Join Kuda</button>
-                <button class="button2">Sign In</button>
-            </div>
-            <ul>
-                
-                <li class="dropdown">
-                    <div class="moblieLiFlex">
-                        <p>Pesonal</p>
-                        <span><i class='bx bxs-right-arrow'></i></span>
-                    </div>
-                </li>
-                <li>
-                    <div class="moblieLiFlex">
-                        <p>Business </p>
-                        <span><i class='bx bxs-right-arrow'></i></span>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <div class="moblieLiFlex">
-                        <p>Company</p>
-                        <span><i class='bx bxs-right-arrow'></i></span>
-                    </div>
-                    <div class="dropdown-content">
-                        <ul>
-                            <li>
-                              <a href="#">Blog</a>
-                            </li>
-                            <li>
-                              <a href="#">Press</a>
-                            </li>
-        
-                            <li>
-                              <a href="#">Join Our Team</a>
-                            </li>
-        
-                            <li>
-                              <a href="#"> About Us</a>
-                            </li>
-                          </ul>
-                    </div>
-                </li>
-                <li>
-                    <div class="moblieLiFlex">
-                        <p>Developers </p>
-                        <span><i class='bx bxs-right-arrow'></i></span>
-                    </div>
-                </li>
-                <li>
-                    <div class="moblieLiFlex">
-                        <p>Contact Us </p>
-                        <span><i class='bx bxs-right-arrow'></i></span>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <div class="moblieLiFlex">
-                        <p>Help</p>
-                        <span><i class='bx bxs-right-arrow'></i></span>
-                    </div>
-                    
-                    <div class="dropdown-content">
-                        <ul>
-                            <li>
-                              <a href="#">Get Help</a>
-                            </li>
-                            <li>
-                              <a href="#">Scam Awareness</a>
-                            </li>
-                            <li>
-                              <a href="#">FAQs</a>
-                            </li>
-        
-                            <li>
-                              <a href="#">Security</a>
-                            </li>
-        
-                            <li>
-                              <a href="#">Contact Us</a>
-                            </li>
-        
-                            <li>
-                              <a href="#">Self Help</a>
-                            </li>
-                          </ul>
-                    </div>
-                </li>
-            </ul>
-            
+          <div class="buttons mobile-sign">
+            <a href="#">Join Kuda</a>
+            <a href="#" class="sign-in">Sign In</a>
+          </div>
+          <ul>
+            <li class="dropdown">
+              <div class="moblieLiFlex">
+                <p>Pesonal</p>
+                <span><i class="bx bxs-right-arrow"></i></span>
+              </div>
+            </li>
+            <li>
+              <div class="moblieLiFlex">
+                <p>Business</p>
+                <span><i class="bx bxs-right-arrow"></i></span>
+              </div>
+            </li>
+            <!-- MOBILE COMPANY DROP DOWN -->
+            <li class="dropdown">
+              <div class="moblieLiFlex">
+                <p>Company</p>
+                <span><i class="bx bxs-right-arrow"></i></span>
+              </div>
+              <div class="dropdown-content">
+                <ul>
+                  <li>
+                    <a href="#">Blog</a>
+                  </li>
+                  <li>
+                    <a href="#">Press</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Join Our Team</a>
+                  </li>
+
+                  <li>
+                    <a href="#"> About Us</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="moblieLiFlex">
+                <p>Developers</p>
+                <span><i class="bx bxs-right-arrow"></i></span>
+              </div>
+            </li>
+            <li>
+              <div class="moblieLiFlex">
+                <p>Contact Us</p>
+                <span><i class="bx bxs-right-arrow"></i></span>
+              </div>
+            </li>
+            <li class="dropdown">
+              <div class="moblieLiFlex">
+                <p>Help</p>
+                <span><i class="bx bxs-right-arrow"></i></span>
+              </div>
+
+              <div class="dropdown-content">
+                <ul>
+                  <li>
+                    <a href="#">Get Help</a>
+                  </li>
+                  <li>
+                    <a href="#">Scam Awareness</a>
+                  </li>
+                  <li>
+                    <a href="#">FAQs</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Security</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Contact Us</a>
+                  </li>
+
+                  <li>
+                    <a href="#">Self Help</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
         </div>
-    </div>
+      </div>
     </nav>
     <main>
       <!-- =======HERO SECTION ===== -->
@@ -1213,5 +1230,6 @@
         </p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

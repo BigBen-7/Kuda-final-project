@@ -1,15 +1,13 @@
-.hero {
+/* .hero {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8%;
   margin: 6% 3% 2%;
   padding: 0 5%;
-  /* margin-bottom: 10%; */
+
 }
-.hero-text {
-  width: 495.6px;
-}
+
 .hero-text h1 {
   width: 450px;
   height: 111px;
@@ -33,7 +31,49 @@
 }
 .app-play-store {
   margin-bottom: 20px;
+} */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8%;
+  margin: 6% 3% 2%;
+  padding: 0 5%;
+  box-sizing: border-box; /* Add this to include padding and border in element's total width and height */
+  overflow: hidden; /* Prevent content overflow */
 }
+
+.hero-text {
+  max-width: 100%; /* Ensure text doesn't overflow */
+}
+
+.hero-text h1 {
+  width: 100%; /* Allow header to resize */
+  max-width: 450px; /* Maintain max width */
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 55.2px;
+  text-align: left;
+  color: #40196d;
+}
+
+.hero-text p {
+  width: 100%; /* Allow paragraph to resize */
+  max-width: 450px; /* Maintain max width */
+  padding-top: 20px;
+  font-size: 19.38px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  margin-bottom: 8%;
+}
+
+.hero-img img {
+  width: 100%; /* Make image responsive */
+  max-width: 550px; /* Maintain max width */
+}
+
 
 /* FIRST SET OF CARDS  STYLE */
 .cards {
@@ -85,35 +125,13 @@
   font-weight: 400;
   line-height: 24px;
   color: grey;
-  /* margin-bottom: 3%; */
-}
-.phone-app .link,
-.manage-money .link {
-  color: #40196d;
-  font-size: 15.75px;
-  font-weight: 700;
-  line-height: 16px;
-  text-align: center;
+  margin-bottom: 5%;
 }
 
-/* .manage-money {
-  padding-top: 3%;
-} */
 
-.save-money-details {
-  width: 350px;
-  height: 120px;
-  font-size: 15.5px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-  padding-bottom: 90px;
-  color: grey;
-}
 
 .take-our-word h2 {
   text-align: center;
-  font-family: Inter;
   font-size: 36px;
   font-weight: 900;
   line-height: 49.68px;
@@ -166,29 +184,30 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  /* border-bottom: 2%; */
 }
 
 .card p {
   margin: 10px 0;
 }
 
-@keyframes slide {
+/* @keyframes slide {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(-50%);
   }
-}
+} */
 /*======SPONSORS LOGOS STYLE======  */
 .sponsors-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   justify-content: center;
   align-items: center;
-  gap: 1%;
-  flex-wrap: wrap;
+  /* gap: 5%; */
   margin-bottom: 4%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .sponsor-logo {
@@ -203,9 +222,6 @@
 }
 /*======PARTNER LOGOS STYLE======  */
 .partner-container {
-  max-width: 1440px;
-  margin: 0 auto;
-  /* height: 290px; */
   background-color: #f9f9f9;
 }
 .partner-logos {
@@ -346,7 +362,6 @@ tr:last-child {
 }
 .learn-more {
   color: #4a2e8f;
-  text-decoration: underline;
   font-weight: bold;
 }
 .learn-more span {

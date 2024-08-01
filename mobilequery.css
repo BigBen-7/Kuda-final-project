@@ -1,34 +1,56 @@
 @media only screen and (max-width: 767px) {
-  body {
-    width: 100%;
-    /* display: block; */
-    /* overflow: hidden; */
-  }
-  /* img{
-    max-width: 100%;
-    height: auto;
-} */
+
+
   /* HERO MOBILE STYLE */
-  .hero {
-    /* display: none; */
+  @media (max-width: 768px) {
+    .hero {
+      width: 100%;
+      margin-top: 25%;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 2%; /* Adjust padding for smaller screens */
+    }
+  
+    .hero-text h1 {
+      padding: 0 5% ;
+      text-align: center;
+      font-size: 2.5rem;
+      line-height: 1.33;
+    }
+  
+    .hero-text p {
+      font-weight: 600;
+      line-height: 1.5;
+      padding: 8% 2% 0; /* Adjust padding for smaller screens */
+      text-align: center;
+      font-size: 1.25rem;
+    }
+  
+    .app-play-store {
+      /* margin: 10px 0; Adjust margin for smaller screens */
+      margin: 0 10%;
+    }
+  
+    .cbn-ndic img {
+      width: 375px; /* Adjust width for smaller screens */
+margin-top: 2%;
+    }
+  
+    .hero-img img {
+      margin: 4% 0;
+      width: 100%;
+      max-width: 500px; /* Adjust max width for smaller screens */
+    }
+  }
+  
+  /* .hero {
     width: 100%;
-    margin-top: 20%;
+    margin-top: 25%;
     flex-direction: column;
     align-items: center;
   }
-  /* .hero-text{
-    max-width: 38% ;
-    width: 100%;
-  } */
-
-  /* this reverse the wrap applied from the hero, some cards have image before text so this wraps them in reverse for mobile */
-  .wrap-reverse {
-    flex-direction: column-reverse;
-  }
-/* 
   .hero h1 {
-    margin-top: 10px;
-    padding: 7%;
+    padding: 5%;
     text-align: center;
     font-size: 2.5rem;
     line-height: 1.33;
@@ -36,26 +58,34 @@
   .hero p {
     font-weight: 600;
     line-height: 1.5;
-    padding: 8%;
+    padding: 8% 8% 0;
     text-align: center;
     font-size: 1.25rem;
-  } */
-  .app-play-store {
-    /* margin: 12% 85px 3%; */
   }
-  .cbn-ndic {
-    margin-left: 12%;
+
+  .app-play-store {
+    margin: 3px 85px;
+  }
+  .cbn-ndic img {
+    width: 90%;
+    margin-left: 5%;
   }
 
   .hero-img img {
-    margin: 4% 2%;
-    width: 100%;
+    margin: 4% 3%;
+    width: 80%;
+  } */
+
+  /* this reverse the wrap applied from the hero, some cards have image before text so this wraps them in reverse for mobile */
+  .wrap-reverse {
+    flex-direction: column-reverse;
   }
+
   /* ///////// */
 
   /* FIRST SET OF CARDS MOBILE STYLE */
-  /* .card {
-    margin-bottom: 12px;
+  .card{
+    margin-bottom: 3%;
   }
   .card-item {
     width: 90%;
@@ -63,50 +93,54 @@
     display: flex;
     align-items: center;
     margin: 0 0 2px 10px;
-  } */
+  }
   /* to fit the paragraph into the newly assigned height for mobile */
-  /* .card-details {
+  .card-details {
     height: 37px;
     margin-top: 1%;
-    line-height: 15.4px;
-  } */
+  }
 
-  /* .card-details p {
+  .card-details p {
     line-height: 1.5;
     margin-left: 18px;
-    font-size: 0.905rem;
+    font-size: 0.805rem;
     font-weight: 900;
-  } */
+  }
 
   /* YOUR PHONE + OUR APP MOBILE STYLE */
   .phone-app {
     /* Margin top to space Phone + App container  from the cards container*/
-    /* margin-top: 5%; */
+    margin-top: 5%;
   }
   .phone-app h2,
   .manage-money h2 {
-    font-size: 2rem;
+    width: 320px;
+    font-size: 1.8rem;
     line-height: 1.38;
     text-align: center;
   }
   .phone-app .debit-details,
   .manage-money .debit-details {
-    width: 80%;
-    padding: 5% 0% 0 1%;
+    /* width: 80%; */
+    padding: 5% 5% 0 0 ;
     font-size: 1rem;
     line-height: 1.5;
-  } 
-  /* 
-    */
-  /* .phone-app .link,
-  .manage-money .link {
-    font-size: 12.75px;
-    margin-left: 80px;
-  } */
+    text-align: center;
+    /* margin: 0 auto;/ */
+  }
+ 
+  
   /* ///////////// */
+  .sponsors-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 10px;
+    justify-content: center;
+    align-items: center;
+  }
   .sponsors-container img {
-    width: 80%;
-    padding: 0% 10%;
+    width: 70%;
+    padding: 2% 5%;
   }
   .partner-container img {
     width: 120px;
@@ -152,7 +186,7 @@
     margin-top: 8%;
     font-size: 10px;
   }
-  .footer-column{
+  .footer-column {
     margin: 5% 0;
   }
   .footer-column {

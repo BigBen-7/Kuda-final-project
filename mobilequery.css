@@ -288,4 +288,34 @@
     line-height: 20px;
     font-size: 14px;
   }
+  .banner-image {
+    display: none;
+  }
+
+  .banner {
+    width: 88%;
+    padding: 15% 10%;
+  }
+  .banner-content {
+    max-width: 100%; /* Adjust width to fit the layout */
+  }
+  .banner-content h1 {
+    width: 100%;
+    font-size: 26px;
+    line-height: 29.68px;
+    text-align: center;
+  }
+  .banner-content p {
+    text-align: center;
+    font-size: 12.38px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .banner-btn{
+    display: block;
+    margin: 0 auto;
+  }
+  .join-button {
+    display: block;
+  }
 }

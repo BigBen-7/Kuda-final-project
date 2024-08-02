@@ -373,7 +373,7 @@ tr:last-child {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  text-align: left;irte
+  text-align: left;
   color: #000000;
 }
 .learn-more {
@@ -425,12 +425,14 @@ tr:last-child {
   text-align: left;
   padding: 2% 0 7% 0;
 }
-.banner-app,
-.banner-btn {
+.banner-app {
   display: none;
 }
 
 .join-button {
+  width: 30%;
+  text-align: center;
+  text-decoration: none;
   padding: 14.6px 31.36px 15.4px 31.36px;
   border-radius: 10px;
   color: white;

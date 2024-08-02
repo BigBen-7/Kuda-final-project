@@ -33,6 +33,16 @@
   margin-bottom: 20px;
 } */
 
+.hero1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8%;
+  margin: 6% 3% 2%;
+  padding: 0 5%;
+  box-sizing: border-box; /* Add this to include padding and border in element's total width and height */
+  overflow: hidden; /* Prevent content overflow */
+}
 .hero {
   display: flex;
   align-items: center;
@@ -43,6 +53,7 @@
   box-sizing: border-box; /* Add this to include padding and border in element's total width and height */
   overflow: hidden; /* Prevent content overflow */
 }
+
 
 .hero-text {
   max-width: 100%; /* Ensure text doesn't overflow */
@@ -204,10 +215,15 @@
   grid-template-columns: repeat(6, 1fr);
   justify-content: center;
   align-items: center;
-  /* gap: 5%; */
+  /* gap: 10%; */
+  /* margin-left: 50%; */
   margin-bottom: 4%;
   max-width: 1440px;
   margin: 0 auto;
+  padding-left: 10%;
+}
+.sponsors-container img{
+  width: 50%;
 }
 
 .sponsor-logo {
@@ -357,7 +373,7 @@ tr:last-child {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  text-align: left;
+  text-align: left;irte
   color: #000000;
 }
 .learn-more {

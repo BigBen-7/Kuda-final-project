@@ -1,23 +1,21 @@
 @media only screen and (max-width: 767px) {
-
-
   /* HERO MOBILE STYLE */
   @media (max-width: 768px) {
-    .hero {
+    .hero1 {
       width: 100%;
       margin-top: 25%;
       flex-direction: column;
       align-items: center;
       padding: 0 2%; /* Adjust padding for smaller screens */
     }
-  
+
     .hero-text h1 {
-      padding: 0 5% ;
+      padding: 0 5%;
       text-align: center;
       font-size: 2.5rem;
       line-height: 1.33;
     }
-  
+
     .hero-text p {
       font-weight: 600;
       line-height: 1.5;
@@ -25,24 +23,24 @@
       text-align: center;
       font-size: 1.25rem;
     }
-  
+
     .app-play-store {
       /* margin: 10px 0; Adjust margin for smaller screens */
       margin: 0 10%;
     }
-  
+
     .cbn-ndic img {
       width: 375px; /* Adjust width for smaller screens */
-margin-top: 2%;
+      margin-top: 2%;
     }
-  
+
     .hero-img img {
       margin: 4% 0;
       width: 100%;
       max-width: 500px; /* Adjust max width for smaller screens */
     }
   }
-  
+
   /* .hero {
     width: 100%;
     margin-top: 25%;
@@ -84,7 +82,7 @@ margin-top: 2%;
   /* ///////// */
 
   /* FIRST SET OF CARDS MOBILE STYLE */
-  .card{
+  .card {
     margin-bottom: 3%;
   }
   .card-item {
@@ -122,14 +120,13 @@ margin-top: 2%;
   .phone-app .debit-details,
   .manage-money .debit-details {
     /* width: 80%; */
-    padding: 5% 5% 0 0 ;
+    padding: 5% 5% 0 0;
     font-size: 1rem;
     line-height: 1.5;
     text-align: center;
     /* margin: 0 auto;/ */
   }
- 
-  
+
   /* ///////////// */
   .sponsors-container {
     display: grid;
@@ -212,5 +209,83 @@ margin-top: 2%;
   }
   .allrights-reserved {
     padding-left: 2%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .hero1 {
+    /* width: 100%; */
+    margin: 20% 1.5% 8%;
+  }
+  .hero {
+    margin: 5% 1.5% 8%;
+  }
+  .hero1 h1 {
+    line-height: 1.5;
+    font-size: 2.5rem;
+  }
+  .hero-text {
+    width: 50%;
+  }
+  .hero1 p {
+    width: 100%;
+    line-height: 1.5;
+    font-size: 1.05rem;
+  }
+  .wrap-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .hero2 {
+    flex-direction: column;
+  }
+  .phone-app h2,
+  .manage-money h2 {
+    width: 320px;
+    font-size: 1.8rem;
+    line-height: 1.38;
+    text-align: center;
+  }
+  .phone-app .debit-details,
+  .manage-money .debit-details {
+    /* width: 80%; */
+    padding: 5% 5% 0 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .manage-money {
+    margin-bottom: 5%;
+  }
+  .hero .manage-money a {
+    /* text-align: center; */
+    margin-left: 100px;
+  }
+  /* specific class for links that refuse to align center */
+  .center {
+    display: block;
+    margin: 0 75px;
+  }
+  /* fee clear as glass class, targeting it alone to reduce its width, larger than others */
+  .hero-img .fee-img {
+    width: 400px;
+  }
+  /* don't take our word */
+  .slider-container {
+    flex-wrap: nowrap;
+  }
+  .sponsors-container img{
+    width: 50%;
+  }
+  .more-for-you-card-container{
+    flex-wrap: nowrap;
+    /* gap: 0; */
+  }
+  .more-for-you-cards{
+    padding: 10px;
+  }
+  .icon-details p{
+    line-height: 20px;
+    font-size: 14px;
   }
 }

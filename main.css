@@ -1,101 +1,15 @@
-/* .hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8%;
-  margin: 6% 3% 2%;
-  padding: 0 5%;
 
-}
-
-.hero-text h1 {
-  width: 450px;
-  height: 111px;
-  font-size: 48px;
-  font-weight: 900;
-  line-height: 55.2px;
-  text-align: left;
-  color: #40196d;
-}
-.hero-text p {
-  width: 450px;
-  padding-top: 20px;
-  font-size: 19.38px;
-  font-weight: 400;
-  line-height: 30px;
-  text-align: left;
-  margin-bottom: 8%;
-}
-.hero-img img {
-  width: 550px;
-}
-.app-play-store {
-  margin-bottom: 20px;
-} */
-
-.hero1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8%;
-  margin: 6% 3% 2%;
-  padding: 0 5%;
-  box-sizing: border-box; /* Add this to include padding and border in element's total width and height */
-  overflow: hidden; /* Prevent content overflow */
-}
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8%;
-  margin: 6% 3% 2%;
-  padding: 0 5%;
-  box-sizing: border-box; /* Add this to include padding and border in element's total width and height */
-  overflow: hidden; /* Prevent content overflow */
-}
-
-
-.hero-text {
-  max-width: 100%; /* Ensure text doesn't overflow */
-}
-
-.hero-text h1 {
-  width: 100%; /* Allow header to resize */
-  max-width: 450px; /* Maintain max width */
-  font-size: 48px;
-  font-weight: 900;
-  line-height: 55.2px;
-  text-align: left;
-  color: #40196d;
-}
-
-.hero-text p {
-  width: 100%; /* Allow paragraph to resize */
-  max-width: 450px; /* Maintain max width */
-  padding-top: 20px;
-  font-size: 19.38px;
-  font-weight: 400;
-  line-height: 30px;
-  text-align: left;
-  margin-bottom: 8%;
-}
-
-.hero-img img {
-  width: 100%; /* Make image responsive */
-  max-width: 550px; /* Maintain max width */
-}
 
 
 /* FIRST SET OF CARDS  STYLE */
-.cards {
-  max-width: 1440px;
+.service-features-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 15px;
   margin: 0 auto;
 }
-.card-item {
+.features-cards-item {
   width: 353.63px;
   height: 146.2px;
   background-color: #fff;
@@ -463,7 +377,84 @@ tr:last-child {
 }
 
 /* ======FOOTER STYLE====== */
+/* footer{
+  border-top: 0.8px solid #DFE3FF80;
+  padding: 72.8px 130px 24px 130px;
+  margin-bottom: 5%;
+}
+.footerContianer{
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+.footerLink, .ContactAddressDiv{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+}
 
+
+.footerColumns h4, .ContactAddressDiv h4{
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.footerColumns p{
+  margin-bottom: 20px
+}
+.footerColumns p a{
+  text-decoration: none;
+  font-weight: 400;
+  font-size: .875rem;
+  line-height: 1.3;
+  color: #000;
+}
+.footerLinkDiv .hero-a p{
+  margin-top: 2%;
+  font-size: 13.95px;
+  font-weight: 400;
+  line-height: 14.4px;
+  text-align: center;
+  color: #979797;
+}
+
+.ContactAddressDiv h4{
+  margin-bottom: 10px;
+}
+.contact{
+  width: 250px;
+}
+.contact a{
+  font-size: 15.13px;
+  font-weight: 700;
+  line-height: 16px;
+}
+.contact div{
+  margin-top: 5%;
+}
+.contact .contactImg a{
+  padding: 0% 3% 0% 0%;
+}
+
+.address span{
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.allrightCont p{
+  max-width: 1440px;
+  width: 1060px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #979797;
+  padding: 0px 0px 20px;
+} */
+
+/* 
 footer {
   background-color: #ffffff;
   border-top: 0.8px solid #dfe3ff80;
@@ -521,9 +512,9 @@ footer {
 
 .footer-app-store .web {
   margin-left: 10px;
-}
+} */
 
-.footer-app-store p {
+/* .footer-app-store p {
   margin-top: 2%;
   font-size: 13.95px;
   font-weight: 400;
@@ -535,10 +526,8 @@ footer {
   display: flex;
   justify-content: space-between;
   margin: 5% 7% 0 0%;
-  /* padding: 5%; */
 }
 .second-footer a {
-  /* text-decoration: underline; */
   font-size: 15.13px;
   font-weight: 700;
   line-height: 16px;
@@ -571,7 +560,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /* margin: 2% 7% 0 7%; */
 }
 .allrights-reserved p {
   font-size: 11.44px;
@@ -580,4 +568,4 @@ footer {
   text-align: left;
   color: #979797;
   padding: 7px;
-}
+} */
